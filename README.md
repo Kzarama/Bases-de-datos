@@ -1,5 +1,7 @@
 # Bases de datos
 
+![img/ico.ico](img/ico.ico)
+
 Notas tomadas del curso de fundamentos de bases de datos .
 
 - Entidades y atributos
