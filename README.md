@@ -160,6 +160,43 @@ SELECT atributo1, atributo2
 FROM nombre_tabla
 ```
 
+## Query
+
+```sql
+SELECT atributo1 as "atribute 1"
+FROM nombre_tabla
+WHERE atributo1 = 1
+```
+
+- GROUP BY = agrupa por un criterio
+- ORDER BY = ordena por un criterio (ASC, DESC)
+- HAVING = where pero despues de ejecutar otras queries
+
+## Nested queries (Queries anidados)
+
+```sql
+SELECT *
+FROM (
+	SELECT atributo1
+	FROM nombre_tabla
+);
+```
+
+```sql
+SELECT *
+FROM nombre_tabla
+WHERE atributo1 = (
+	SELECT atributo1
+	FROM nombre_tabla
+);
+```
+
+# Join
+
+![img/2.png](img/2.png)
+
+![img/3.png](img/3.png)
+
 ## Pasos para realizar un proyecto:
 
 1. Identificar las entidades
