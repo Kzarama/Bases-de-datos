@@ -71,7 +71,10 @@ Nos permite dejar todo en una forma normal, siguiendo las 12 reglas de Codd
 - INSERT = inserta un nuevo registro a la db
 - UPDATE = actualiza los datos de la db
 - DELETE = borrar datos de la db
-- SELECT = retorna datos
+- SELECT = retorna datos - lo que se quiere mostrar
+- FROM = de donde voy a tomar los datos
+- WHERE = filtos de los datos que quiero mostrar
+- 
 
 ## Crear db
 
@@ -160,7 +163,7 @@ SELECT atributo1, atributo2
 FROM nombre_tabla
 ```
 
-## Query
+## Query (seleccionar datos dado parametros de consulta)
 
 ```sql
 SELECT atributo1 as "atribute 1"
@@ -170,7 +173,9 @@ WHERE atributo1 = 1
 
 - GROUP BY = agrupa por un criterio
 - ORDER BY = ordena por un criterio (ASC, DESC)
-- HAVING = where pero despues de ejecutar otras queries
+- HAVING = where pero despues de ejecutar otras queries - filtros despues de agrupar los datos
+- GROUP_CONCAT = toma el resultado de una query y lo pone en campos separados con comas
+- LIMIT = limita el numero de respuestas de la query
 
 ## Nested queries (Queries anidados)
 
